@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  background-color: #fff;
+
+  overflow-x: hidden;
+}
+
+/*  */
+.hidden {
+  display: none;
+}
+/*  */
+
+/* side-bar */
+
+.side-nav {
+  width: 0;
+  height: 100%;
+
+  font-size: 2rem;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  overflow-x: hidden;
+
+  color: #fff;
+  background-color: black;
+
+  transition: width 0.5s;
+}
+
+.side-nav-list {
+  width: 100%;
+  height: 100%;
+
+  list-style: none;
+
+  padding: 2rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.side-nav-item {
+  width: 100%;
+
+  padding-left: 3rem;
+}
+
+.side-nav-item:first-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.side-nav-link:link,
+.side-nav-link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.side-nav-link:hover,
+.side-nav-link:active {
+  color: rgb(209, 209, 209);
+}
+
+.svg-icon {
+  width: 2rem;
+  height: 2rem;
+
+  fill: #fff;
+}
+.svg-icon:hover {
+  fill: rgb(209, 209, 209);
+}
+
+/* side-bar */
+
+.main-container {
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+
+  transition: margin-left .5s;
+}
+
+.heading-1 {
+  font-size: 3rem;
+}
+
+.para-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  margin-top: 3rem;
+}
+
+.nav-open-controller{
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+.svg-open {
+  width: 3rem;
+  height: 3rem;
+
+  fill: black;
+}
+
+.nav-open-controller-text{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+
